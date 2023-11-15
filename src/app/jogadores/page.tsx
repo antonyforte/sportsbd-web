@@ -1,3 +1,5 @@
+"use client"
+import PlayersTable from '@/components/jogadores'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -9,7 +11,6 @@ import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
 
 
-
 export default function Jogadores() {
   return (
     <div className='min-h-screen flex flex-col rows'>
@@ -17,7 +18,7 @@ export default function Jogadores() {
         <h1>Acompanhe as noticias e resultados do maior campeonato de futebol do mundo(Trabalho feito por: )</h1>
       </div>
       {/*HEADER PRINCIPAL - BOTOES JOGOS CLASSIFICAÇÃO TRANSFERENCIAS JOGADORES LOGIN */}
-      <div className='py-2 flex h-24 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
+      <div className='py-2 flex h-20 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
           <div className='w-2/12 py-4 px-2 flex'>
             <Button className='w-36' style={{backgroundImage: `url(icon-theme.png)`, backgroundSize: '100% 100%',backgroundRepeat: 'no-repeat',backgroundPosition: 'center center'}} asChild>
                 <Link href="/"></Link>
@@ -71,7 +72,9 @@ export default function Jogadores() {
         </div>
       </div>
       <div className='flex-grow bg-zinc-900'>
-        PAGINA JOGADORES
+        <div className='w-full'>
+          <PlayersTable/>
+        </div>
       </div>
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>

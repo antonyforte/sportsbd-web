@@ -17,7 +17,7 @@ export default function Classificacao() {
         <h1>Acompanhe as noticias e resultados do maior campeonato de futebol do mundo(Trabalho feito por: )</h1>
       </div>
       {/*HEADER PRINCIPAL - BOTOES JOGOS CLASSIFICAÇÃO TRANSFERENCIAS JOGADORES LOGIN */}
-      <div className='py-2 flex h-24 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
+      <div className='py-2 flex h-20 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
           <div className='w-2/12 py-4 px-2 flex'>
             <Button className='w-36' style={{backgroundImage: `url(icon-theme.png)`, backgroundSize: '100% 100%',backgroundRepeat: 'no-repeat',backgroundPosition: 'center center'}} asChild>
               <Link href="/"></Link>
