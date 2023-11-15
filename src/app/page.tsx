@@ -81,10 +81,14 @@ export default function Home() {
           <div>
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='flex flex-col justify-center items-center px-32'>
-            <h1 className='text-orange-600 font-bold py-6 bg-zinc-800'>
-              O QUE COLOCAR AQUI?
-            </h1>
+          <div className='justify-center items-center px-32'>
+            <div className='text-white text-xsm'>
+              <p className='text-orange-600'>Antonio</p>
+              <p className='text-orange-600'>Caio</p>
+              <p className='text-orange-600'>Davi</p>
+              <p className='text-orange-600'>Evaldo</p>
+              <p className='text-orange-600'>Gustavo</p>
+            </div>
           </div>
           <div>
             <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
