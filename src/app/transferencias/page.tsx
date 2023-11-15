@@ -76,15 +76,15 @@ export default function Transferencias() {
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>
           <div>
-            <img className='align-middle h-20 px-10 py-2 justify-center items-center h-full flex-grow' src='ufsj-logo.png'></img>
+            <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='flex px-32'>
+          <div className='flex flex-col justify-center items-center px-32'>
             <h1 className='text-orange-600 font-bold py-6 bg-zinc-800'>
-              O QUE BOTAR ?
+              O QUE COLOCAR AQUI?
             </h1>
           </div>
           <div>
-            <img className='align-middle h-20 px-36 py-2 justify-center items-center h-full flex-grow' src='ufsj-ccomp-logo.png'></img>
+            <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
           </div>
         </div>
       </div>
