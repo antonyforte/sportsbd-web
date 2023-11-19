@@ -1,4 +1,4 @@
-// Arquivo fakeData.js
+
 
 interface Player{
     nome: string
@@ -22,24 +22,23 @@ export function getFakePlayersData(): Promise<Player[]> {
           nacionalidade: 'Inglesa',
           time: 'Time B',
         },
-        // Os jogadores 3 até 52 são adicionados aqui
+
       ];
 
-      // Adicionando mais 50 jogadores ao array fakeData
+
       for (let i = 3; i <= 52; i++) {
         fakeData.push({
           nome: `Jogador ${i}`,
-          posicao: `Posição ${i}`, // Pode substituir por posições reais se preferir
-          nacionalidade: i % 2 === 0 ? 'Brasileira' : 'Inglesa', // Exemplo de alternância entre nacionalidades
-          time: i % 2 === 0 ? 'Time A' : 'Time B', // Alternância entre dois times
+          posicao: `Posição ${i}`,
+          nacionalidade: i % 2 === 0 ? 'Brasileira' : 'Inglesa',
+          time: i % 2 === 0 ? 'Time A' : 'Time B',
         });
       }
 
 
     return new Promise((resolve) => {
-      // Simulando um pequeno atraso de tempo para simular uma chamada assíncrona à API
       setTimeout(() => {
         resolve(fakeData);
-      }, 1000); // Tempo de espera simulado de 1 segundo (1000 milissegundos)
+      }, 1000);
     });
   }

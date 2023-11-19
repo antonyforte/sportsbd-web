@@ -1,3 +1,4 @@
+"use client";
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -7,7 +8,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
-
+import EditedTable from "@/components/edited-table"
 
 
 export default function Classificacao() {
@@ -70,10 +71,12 @@ export default function Classificacao() {
             </div>
         </div>
       </div>
-      <div className='flex-grow bg-zinc-900'>
-        Pagina classificacao
-
+      <div style={{backgroundImage: `url('bg-class.jpg')`}}>
+        <div className='w-auto h-max' >
+          <EditedTable/>
+        </div>
       </div>
+
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>
           <div>

@@ -1,5 +1,6 @@
 "use client"
 import PlayersTable from '@/components/jogadores'
+import { MagicCard } from '@/components/magic-Card'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -78,20 +79,13 @@ export default function Jogadores() {
       </div>
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>
-          <div>
+          <div className='px-10'>
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='justify-center items-center px-32'>
-            <div className='text-white text-xsm'>
-              <p className='text-orange-600'>Antonio</p>
-              <p className='text-orange-600'>Caio</p>
-              <p className='text-orange-600'>Davi</p>
-              <p className='text-orange-600'>Evaldo</p>
-              <p className='text-orange-600'>Gustavo</p>
-            </div>
+          <div className='flex px-8 py-5'>
           </div>
-          <div>
-            <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
+          <div className='py-2 px-2'>
+            <img className='h-16 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
           </div>
         </div>
       </div>

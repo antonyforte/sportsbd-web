@@ -1,3 +1,4 @@
+import { MagicCard } from '@/components/magic-Card'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -83,11 +84,6 @@ export default function Home() {
           </div>
           <div className='justify-center items-center px-32'>
             <div className='text-white text-xsm'>
-              <p className='text-orange-600'>Antonio</p>
-              <p className='text-orange-600'>Caio</p>
-              <p className='text-orange-600'>Davi</p>
-              <p className='text-orange-600'>Evaldo</p>
-              <p className='text-orange-600'>Gustavo</p>
             </div>
           </div>
           <div>

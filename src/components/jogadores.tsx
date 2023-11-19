@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow } from '@/components/ui/table';
-import { getFakePlayersData } from '@/test/fakeData'; // Importando a função para dados falsos
+import { getFakePlayersData } from '@/test/fakeData';
+import { MagicCard } from '@/components/magic-Card'
 
 interface Player {
   nome: string;
@@ -15,16 +16,14 @@ function PlayersTable() {
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        // Simulando dados recebidos do backend
+
         const fakeData = await getFakePlayersData();
-        // Se os dados forem recebidos com sucesso, atualize o estado com os dados dos jogadores
         setPlayersData(fakeData);
       } catch (error) {
         console.error('Erro ao buscar jogadores:', error);
       }
     };
 
-    // Chame a função para buscar os jogadores ao montar o componente
     fetchPlayers();
   }, []);
 
