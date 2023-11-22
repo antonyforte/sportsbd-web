@@ -1,3 +1,4 @@
+"use client";
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -7,6 +8,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
+import TransfersTable from "@/components/transferencias"
 
 
 
@@ -71,7 +73,7 @@ export default function Transferencias() {
         </div>
       </div>
       <div className='flex-grow bg-zinc-900'>
-        PAGINA TRANSFERENCIAS
+        <TransfersTable></TransfersTable>
       </div>
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>

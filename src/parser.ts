@@ -10,7 +10,7 @@ const teamSchema = z.object({
 async function getAndWriteTeams() {
   try {
     const response = await axios.get('URL_DO_SERVIDOR/times'); // Substitua pela URL correta
-    const teams: unknown[] = response.data; // Supondo que 'response.data' é um array de times
+    const teams: unknown[] = response.data;
 
     const validatedTeams = teams.map((team: unknown) => {
       try {
