@@ -10,7 +10,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
-
+import AnimatedGradientComponent from '@/components/magic-card2'
 
 export default function Jogadores() {
   return (
@@ -82,7 +82,8 @@ export default function Jogadores() {
           <div className='px-10'>
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='flex px-8 py-5'>
+          <div className='py-1'>
+            <AnimatedGradientComponent/>
           </div>
           <div className='py-2 px-2'>
             <img className='h-16 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>

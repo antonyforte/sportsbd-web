@@ -1,4 +1,6 @@
+"use client";
 import { MagicCard } from '@/components/magic-Card'
+import AnimatedGradientComponent from '@/components/magic-card2'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -82,9 +84,8 @@ export default function Home() {
           <div>
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='justify-center items-center px-32'>
-            <div className='text-white text-xsm'>
-            </div>
+          <div className='py-1'>
+            <AnimatedGradientComponent/>
           </div>
           <div>
             <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>

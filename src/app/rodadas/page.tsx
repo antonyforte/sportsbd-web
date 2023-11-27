@@ -1,3 +1,4 @@
+"use client";
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -7,6 +8,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
+import AnimatedGradientComponent from '@/components/magic-card2'
 
 
 
@@ -78,14 +80,8 @@ export default function Rodadas() {
           <div>
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
-          <div className='justify-center items-center px-32'>
-            <div className='text-white text-xsm'>
-              <p className='text-orange-600'>Antonio</p>
-              <p className='text-orange-600'>Caio</p>
-              <p className='text-orange-600'>Davi</p>
-              <p className='text-orange-600'>Evaldo</p>
-              <p className='text-orange-600'>Gustavo</p>
-            </div>
+          <div className='py-1'>
+            <AnimatedGradientComponent/>
           </div>
           <div>
             <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
