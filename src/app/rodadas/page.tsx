@@ -9,14 +9,14 @@ import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
 import AnimatedGradientComponent from '@/components/magic-card2'
-
+import MatchTable from '@/components/rodadas'
 
 
 export default function Rodadas() {
   return (
     <div className='min-h-screen flex flex-col rows'>
       <div className='text-xsm tracking-wider italic px-2 bg-zinc-900 flex'>
-        <h1>Acompanhe as noticias e resultados do maior campeonato de futebol do mundo(Trabalho feito por: )</h1>
+        <h1>Acompanhe resultados do maior campeonato de futebol do mundo</h1>
       </div>
       {/*HEADER PRINCIPAL - BOTOES JOGOS CLASSIFICAÇÃO TRANSFERENCIAS JOGADORES LOGIN */}
       <div className='py-2 flex h-20 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
@@ -67,13 +67,10 @@ export default function Rodadas() {
               </Link>
             </Button>
           </div>
-            <div className='flex-grow h-full flex'>
-              <p className='flex align-middle justify-center items-center w-full'>Login</p>
-            </div>
         </div>
       </div>
-      <div className='flex-grow bg-zinc-900'>
-        PAGINA RODADAS
+      <div className='flex-grow flex bg-zinc-900'>
+        <MatchTable/>
       </div>
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>

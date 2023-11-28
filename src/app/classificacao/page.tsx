@@ -68,9 +68,6 @@ export default function Classificacao() {
               </Link>
             </Button>
           </div>
-            <div className='flex-grow h-full flex'>
-              <p className='flex align-middle justify-center items-center w-full'>Login</p>
-            </div>
         </div>
       </div>
       <div style={{backgroundImage: `url('bg-class.jpg')`}}>
