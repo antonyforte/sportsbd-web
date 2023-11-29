@@ -10,7 +10,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
-
+import NewsComponent from '@/components/newscomponent'
 
 
 export default function Home() {
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </div>
       <div className='flex-grow bg-zinc-900'>
-        PAGINA /
+         <NewsComponent/>
       </div>
       <div className='flex' style={{backgroundImage: `url('black-bg.jpg')`}}>
         <div className='columns-3 flex-1'>

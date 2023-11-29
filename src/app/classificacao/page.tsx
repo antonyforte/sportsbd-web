@@ -17,7 +17,7 @@ export default function Classificacao() {
   return (
     <div className='min-h-screen flex flex-col rows'>
       <div className='text-xsm tracking-wider italic px-2 bg-zinc-900 flex'>
-        <h1>Acompanhe as noticias e resultados do maior campeonato de futebol do mundo(Trabalho feito por: )</h1>
+        <h1>Acompanhe resultados do maior campeonato de futebol do mundo</h1>
       </div>
       {/*HEADER PRINCIPAL - BOTOES JOGOS CLASSIFICAÇÃO TRANSFERENCIAS JOGADORES LOGIN */}
       <div className='py-2 flex h-20 bg-cover bg-center columns-2 gap-24' style={{backgroundImage: `url('black-bg.jpg')`}}>
