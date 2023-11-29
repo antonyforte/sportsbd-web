@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Certifique-se de instalar o axios: npm install axios
+import axios from 'axios';
 
 interface NewsItem {
   cacheId: string;
   link: string;
   title: string;
-  // Outros campos conforme os dados retornados pela API
+  pagemap: { cse_thumbnail: { src: string }[] };
 }
 
 const NewsComponent = () => {
@@ -30,19 +30,26 @@ const NewsComponent = () => {
   }, [apiKey, searchEngineId]);
 
   return (
-    <div style={{ backgroundColor: 'black', color: 'orange', padding: '20px' }}>
-      <h1>Notícias do Campeonato Brasileiro</h1>
-      <ul style={{ listStyleType: 'none', padding: 0 }}>
+    <div className="bg-black text-orange-500 p-8">
+      <h1 className="text-3xl font-bold mb-4">Notícias do Campeonato Brasileiro</h1>
+      <ul className="list-none p-0">
         {newsResults.map((item) => (
-          <li key={item.cacheId} style={{ marginBottom: '15px' }}>
+          <li key={item.cacheId} className="mb-8">
             <a
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'orange', textDecoration: 'none' }}
+              className="text-xl font-semibold hover:underline block mb-2"
             >
               {item.title}
             </a>
+            {item.pagemap?.cse_thumbnail?.length > 0 && (
+              <img
+                src={item.pagemap.cse_thumbnail[0].src}
+                alt="Imagem relacionada à notícia"
+                className="w-40 h-auto rounded"
+              />
+            )}
           </li>
         ))}
       </ul>
