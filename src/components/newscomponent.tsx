@@ -11,8 +11,8 @@ interface NewsItem {
 const NewsComponent = () => {
   const [newsResults, setNewsResults] = useState<NewsItem[]>([]);
 
-  const apiKey = 'AIzaSyDqCJZJQ8XSP0BouOSEq5IVbcpJSgHLDO8';
-  const searchEngineId = 'a5bb93fb6a998499f';
+  const apiKey = process.env.APIKEY;
+  const searchEngineId = process.env.SEARCHENGINEID;
 
   useEffect(() => {
     const fetchData = async () => {
