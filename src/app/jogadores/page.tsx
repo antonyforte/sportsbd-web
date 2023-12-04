@@ -1,6 +1,5 @@
 "use client"
-import PlayersTable from '@/components/jogadores'
-import { MagicCard } from '@/components/magic-Card'
+import PlayersTable from '@/components/PlayersTable'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow   } from '@/components/ui/table'
 import Image from 'next/image'
@@ -10,7 +9,7 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
-import AnimatedGradientComponent from '@/components/magic-card2'
+import CardzinComNomes from '@/components/CardzinComNomes'
 
 export default function Jogadores() {
   return (
@@ -80,7 +79,7 @@ export default function Jogadores() {
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
           <div className='py-1'>
-            <AnimatedGradientComponent/>
+            <CardzinComNomes/>
           </div>
           <div className='py-2 px-2'>
             <img className='h-16 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>

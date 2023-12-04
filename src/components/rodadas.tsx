@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow } from '@/components/ui/table';
 import { getFakeMatchData } from '@/test/fakeDataIII';
-import { MagicCard } from '@/components/magic-Card'
-import PlayersTable from './jogadores';
+import PlayersTable from './PlayersTable';
 
 interface Match {
   rodada: string

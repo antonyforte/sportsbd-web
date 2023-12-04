@@ -16,7 +16,7 @@ interface Time {
   escudo?: string;
 }
 
-function JogadoresComponent() {
+function TransfersTable() {
   const [jogadores, setJogadores] = useState<Jogador[]>([]);
   const [times, setTimes] = useState<Time[]>([]);
 
@@ -93,4 +93,4 @@ function JogadoresComponent() {
   );
 }
 
-export default JogadoresComponent;
+export default TransfersTable;

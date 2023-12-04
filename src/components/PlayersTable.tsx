@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow } from '@/components/ui/table';
-import { getFakePlayersData } from '@/test/fakeData';
-import { MagicCard } from '@/components/magic-Card'
 import axios from 'axios';
 
 interface Player {

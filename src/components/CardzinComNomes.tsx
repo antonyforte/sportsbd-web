@@ -1,7 +1,7 @@
 import React from 'react';
 import '@/app/magic.css'; // Nome do arquivo CSS onde as estilizações estão contidas
 
-function AnimatedGradientComponent() {
+function CardzinComNomes() {
   const handleHover = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     event.currentTarget.classList.add('animate');
   };
@@ -25,4 +25,4 @@ function AnimatedGradientComponent() {
   );
 }
 
-export default AnimatedGradientComponent;
+export default CardzinComNomes;

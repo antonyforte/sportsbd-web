@@ -8,8 +8,8 @@ import { FaFutbol } from 'react-icons/fa'
 import { LiaPassportSolid } from 'react-icons/lia'
 import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
-import TransfersTable from "@/components/transferencias"
-import AnimatedGradientComponent from '@/components/magic-card2';
+import TransfersTable from "@/components/TransfersTable"
+import CardzinComNomes from '@/components/CardzinComNomes';
 
 
 export default function Transferencias() {
@@ -78,7 +78,7 @@ export default function Transferencias() {
             <img className='h-20 px-10 py-2' src='ufsj-logo.png' alt='UFsj Logo'></img>
           </div>
           <div className='py-1'>
-            <AnimatedGradientComponent/>
+            <CardzinComNomes/>
           </div>
           <div>
             <img className='h-20 px-36 py-2' src='ufsj-ccomp-logo.png' alt='UFsj Ccomp Logo'></img>
