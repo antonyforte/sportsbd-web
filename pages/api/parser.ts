@@ -3,13 +3,13 @@ import axios from 'axios';
 import fs from 'fs';
 
 const teamSchema = z.object({
-  sigla: z.string(),
+  complemento: z.string(),
   nome: z.string(),
 });
 
-async function getAndWriteTeams() {
+export async function getAndWriteTeams() {
   try {
-    const response = await axios.get('URL_DO_SERVIDOR/times'); // Substitua pela URL correta
+    const response = await axios.get('http://localhost:3333/times'); // Substitua pela URL correta
     const teams: unknown[] = response.data;
 
     const validatedTeams = teams.map((team: unknown) => {
@@ -24,12 +24,12 @@ async function getAndWriteTeams() {
 
     const formattedTeams: Record<string, string> = {};
     validatedTeams.forEach((team: any) => {
-      formattedTeams[team.sigla] = team.nome;
+      formattedTeams[team.complemento] = team.nome;
     });
 
 
     const jsonData = JSON.stringify(formattedTeams, null, 2);
-    fs.writeFileSync('caminho/para/o/arquivo/times.json', jsonData);
+    fs.writeFileSync('src/table/react-league-table/data/team-mapping.json', jsonData);
     console.log('Arquivo escrito com sucesso!');
   } catch (error) {
     console.error('Ocorreu um erro:', error);

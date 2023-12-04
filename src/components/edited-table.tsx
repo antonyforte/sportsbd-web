@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import LeagueTable from "@/table/react-league-table/components/league-table/index";
+import axios from "axios";
+
 
 const EditedTable: React.FC = () => {
+  useEffect(() => {
+    async function fetchDataAndWriteTeams(){
+      try{
+        await axios.get('/api/parser')
+      } catch(error){
+        console.error('Failed to parser teams',error)
+      }
+    }
+  })
   return (
     <MainWrapper>
       <TableWrapper>

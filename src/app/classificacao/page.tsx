@@ -10,10 +10,13 @@ import { MdOutlineSportsScore } from "react-icons/md";
 import { RiUser3Line } from "react-icons/ri";
 import EditedTable from "@/components/edited-table"
 import AnimatedGradientComponent from "@/components/magic-card2"
-
+import TabelaClassificacao from '@/components/TabelaClassificacao'; "@/components/TabelaClassificacao"
 
 
 export default function Classificacao() {
+
+
+
   return (
     <div className='min-h-screen flex flex-col rows'>
       <div className='text-xsm tracking-wider italic px-2 bg-zinc-900 flex'>
@@ -72,7 +75,7 @@ export default function Classificacao() {
       </div>
       <div style={{backgroundImage: `url('bg-class.jpg')`}}>
         <div className='w-auto h-max' >
-          <EditedTable/>
+          <TabelaClassificacao/>
         </div>
       </div>
 
